@@ -1,0 +1,265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 11, 2019, 12:03:08 PM
+    Author     : brahim
+*/
+
+/*----------------------------------------------------------------------------*/
+Button, .Button {
+    -fx-padding: 8 15 8 15;
+    -fx-text-fill: darck;
+    -fx-background-insets: 0 0 0 1;
+    -fx-background-radius: 3;
+    -fx-background-color: #dfdfdf;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 6,0,1,1 );
+}
+Button:hover, .Button:hover {
+    -fx-background-color: #eaeaea;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,0,0,4 );
+}
+Button:pressed, .Button:pressed {
+    -fx-background-insets: 0 0 0 1;
+    -fx-translate-y: 1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 4,0,0,0 );
+}
+/*----------------------------------------------------------------------------*/
+ComboBox {
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 1;
+    -fx-background-radius: 3;
+    -fx-background-color: #dfdfdf;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 6,0,1,1 );
+}
+ComboBox:hover {
+    -fx-background-color: #eaeaea;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,0,0,4 );
+}
+ComboBox:pressed {
+    -fx-background-insets: 0 0 0 1;
+    -fx-translate-y: 1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 4,0,0,0 );
+}
+/*----------------------------------------------------------------------------*/
+TextField {
+    -fx-border-width: 1px;
+    -fx-border-radius: 25%;
+    -fx-background-radius: 25;
+    -fx-border-color: -fx-text-box-border;
+    -fx-background-color: white ;
+    -fx-background-insets: 0, 0 0 0 1;
+}
+TextField:focused {
+    -fx-border-color: #3689e6;
+}
+/*----------------------------------------------------------------------------*/
+Spinner {
+    -fx-border-width: 1px;
+    -fx-border-radius: 25%;
+    -fx-background-radius: 25;
+    -fx-border-color: -fx-text-box-border;
+    -fx-background-color: white ;
+    -fx-background-insets: 0, 0 0 0 0;
+}
+Spinner:focused {
+    -fx-border-color: #3689e6;
+}
+.spinner > .text-field {
+    -fx-border-width: 0px;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-border-color: -fx-text-box-border;
+    -fx-background-color: white ;
+    -fx-background-insets: 0;
+    -fx-alignment: CENTER;
+}
+Spinner .increment-arrow-button, Spinner .decrement-arrow-button {
+    -fx-border-width: 0px;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-background-insets: 0;
+    -fx-padding: 0 15 0 15;
+}
+Spinner .increment-arrow-button {
+    -fx-background-color: #68b723; 
+    -fx-border-color: white;
+}
+
+Spinner .decrement-arrow-button {
+    -fx-background-color: #c6262e;
+    -fx-border-color: white;
+}
+.spinner .increment-arrow-button .increment-arrow {
+    -fx-background-color: white;
+}
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+Spinner .increment-arrow-button:hover{
+    -fx-background-color: #9bdb4d;
+}
+Spinner .decrement-arrow-button:hover {
+    -fx-background-color: #ed5353;
+}
+Spinner .increment-arrow-button:pressed{
+    -fx-background-color: #3a9104;
+}
+Spinner .decrement-arrow-button:pressed {
+    -fx-background-color: #a10705;
+}
+/*----------------------------------------------------------------------------*/
+Separator > .line {
+    /*-fx-border-style: segments(0.166667em, 0.166667em);*/
+    -fx-border-style: solid;
+    -fx-border-width: 0.083333em; /* 1 */
+}
+
+Separator:horizontal {
+    -fx-padding: 5 0 0 0;
+}
+
+Separator:horizontal > .line {
+    -fx-background-color: null;
+    -fx-padding: 0.083333em 0.0em 0.0em 0.0em; /* 1 0 0 0 */
+    -fx-border-color: #C8C8C8 transparent transparent transparent;
+}
+
+Separator:vertical > .line {
+    -fx-background-color: null;
+    -fx-padding: 0.0em 0.083333em 0.0em 0.0em; /* 0 1 0 0 */
+    -fx-border-color:  transparent #C8C8C8 transparent transparent;
+}
+/*----------------------------------------------------------------------------*/
+Text {
+    -fx-font-smoothing-type: lcd;
+    -fx-fill: darkslategrey;
+    /*-fx-font-size: 8pt;*/
+}
+/*----------------------------------------------------------------------------*/
+.b_add {
+    -fx-text-fill: white;
+    -fx-background-color: #68b723;
+}
+
+.b_edit {
+    -fx-text-fill: white;
+    -fx-background-color: #f37329;
+}
+
+.b_remove {
+    -fx-text-fill: white;
+    -fx-background-color: #c6262e;
+}
+
+.b_refresh {
+    -fx-text-fill: white;
+    -fx-background-color: #3689e6;
+}
+
+.b_cancel {
+    -fx-text-fill: white;
+    -fx-background-color: #f9c440;
+    /*-fx-text-fill: #222;*/
+}
+
+.OptionButton Label {
+    -fx-font-size: 14;
+    -fx-text-fill: #222;
+    -fx-opacity: 1.7;
+}
+
+.separator-segm > .line {
+    -fx-border-style: segments(0.166667em, 0.166667em);
+}
+
+.info-pane {
+    -fx-padding: 2 5 2 5;
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-border-radius: 5;
+    -fx-background-radius: 8;
+}
+
+.info-pane > .label {
+    -fx-text-fill: white;
+}
+
+.info-pane:hover {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 6,0,1,2 );
+}
+
+.info-strawberry {
+    -fx-background-color: #c6262e;
+    -fx-border-color: #a10705;
+}
+.info-orange {
+    -fx-background-color: #f37329;
+    -fx-border-color: #cc3b02;
+}
+.info-banana {
+    -fx-background-color: #f9c440;
+    -fx-border-color: #d48e15;
+}
+.info-lime {
+    -fx-background-color: #68b723;
+    -fx-border-color: #3a9104;
+}
+.info-blueberry {
+    -fx-background-color: #3689e6;
+    -fx-border-color: #0d52bf;
+}
+.info-grape {
+    -fx-background-color: #a56de2;
+    -fx-border-color: #7239b3;
+}
+.info-cocoa {
+    -fx-background-color: #715344;
+    -fx-border-color: #57392d;
+}
+.info-silver {
+    -fx-background-color: #abacae;
+    -fx-border-color: #7e8087;
+}
+.info-slate {
+    -fx-background-color: #485a6c;
+    -fx-border-color: #273445;
+}
+.info-black {
+    -fx-background-color: #333333;
+    -fx-border-color: #1a1a1a;
+}
+/*----------------------------------------------------------------------------*/
+#statusPane {
+    /*-fx-background-color: #3689e6;*/
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: #C8C8C8;
+}
+
+#statusPane .label {
+    /*-fx-text-fill: white;*/
+}
+
+#graphPane {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0 1 0 1;
+    -fx-border-color: #C8C8C8;
+}
+/*--------Persons.fxml---------------------------------------------------------*/
+#carteLeft {
+    -fx-background-color: -fx-background;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #C8C8C8;
+}
+
+#carteLeft .label {
+    /*-fx-text-fill: white;*/
+}
+/*----------------------------------------------------------------------------*/
+
+Circle:hover {
+    -fx-scale-x: 2;
+    -fx-scale-y: 2;
+}
